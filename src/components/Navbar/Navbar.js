@@ -1,11 +1,7 @@
 import "./Navbar.css";
 import React from "react";
 import { useState } from "react";
-// import { FaBars } from "react-icons/fa";
-// import { CgClose } from "react-icons/cg";
 export default function Navbar() {
-  // const [isMobile, setIsMobile] = useState(false);
-
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -22,7 +18,6 @@ export default function Navbar() {
     <a className="brand" href="#home">
         Fahad{" "}
       </a>
-      {/* <div className={isMobile ? "nav-links-mobile" : "nav-links"}> */}
       <div className="nav-links">
         <a
           activeclass="active"
@@ -55,14 +50,6 @@ export default function Navbar() {
           Skills
         </a>
       </div>
-      {/* <button
-        className="mobile-menu-icon"
-        onClick={() => {
-          setIsMobile(!isMobile);
-        }}
-      >
-        {isMobile ? <CgClose /> : <FaBars />}
-      </button> */}
     </div>
   );
 }

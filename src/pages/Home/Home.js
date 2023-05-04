@@ -1,5 +1,3 @@
-// import GitHubIcon from "@material-ui/icons/GitHub";
-// import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ReactTypingEffect from "react-typing-effect";
 import "./Home.css";

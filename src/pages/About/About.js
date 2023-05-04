@@ -1,10 +1,30 @@
-import React from 'react'
-import './About.css';
+import React from "react";
+import pic from "../../Assets/DSC_8841.JPG";
+import "./About.css";
 
-const About = () => {
+export default function About() {
   return (
-    <div id="about">About</div>
-  )
+    <>
+      <div id="about">
+        <div className="row">
+          <div className="image">
+            <img src={pic} alt="Happy Coding" />
+          </div>
+          <div className="information">
+            <h1>About Me</h1>
+            <p>
+              Hey, I'm Mohd Fahad. Currently in the pre final year of my
+              undergraduate degree in Computer Science Engineering from Jamia
+              Hamdard University, New Delhi. I would describe myself as someone
+              who is deeply fascinated by Technology and Innovation. I'm most
+              passionate about Web Development and Competitive Programming. In
+              my free time I explore other tech innovations like <br />Machine Learning, App
+              development.
+            </p>
+            <a href="">Resume</a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
-
-export default About
