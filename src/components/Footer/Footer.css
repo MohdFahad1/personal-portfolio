@@ -1,0 +1,27 @@
+.footer {
+    border-top: 2px solid rgb(166, 165, 165);
+    width: 100%;
+    background-color: rgba(234, 236, 239, 0.81);
+    color: #000;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .footer h1 {
+    font-size: 50px;
+  }
+  
+  .footer .info {
+    padding: 0 20% 20px 20%;
+  }
+  
+  .footer span {
+    color: #fff;
+    background-color: #343a40;
+    padding: 0 3px 0 3px;
+    border-radius: 3px;
+  }
+  
+  .footer .thanks {
+    padding-bottom: 20px;
+  }
