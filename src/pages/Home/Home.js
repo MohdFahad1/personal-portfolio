@@ -1,8 +1,10 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import ReactTypingEffect from "react-typing-effect";
+import Typewriter from 'typewriter-effect';
 import "./Home.css";
 
+
 const Home = () => {
+
   return (
     <>
       <div id="home">
@@ -16,16 +18,17 @@ const Home = () => {
               <br />
             </h1>
           </div>
-          <h1 className="typingEffect">
-            <ReactTypingEffect
-              text={[
-                "A Front-End Developer",
-                "An Aspiring MERN stack Developer"
-              ]}
-            />
-          </h1>
           <div className="lead">
-            <p>A keen and curious learner</p>
+            <p>
+              <Typewriter
+            options={{
+              strings: ['A keen and curious learner.'],
+              autoStart: true,
+              loop: false,
+              pauseFor: 999999999999999,
+            }}
+          />
+            </p>
           </div>
           <div className="iconList">
             <a
@@ -33,14 +36,14 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin className="icons" style={{fontSize:"3rem"}}/>
+              <FaLinkedin className="icons" style={{ fontSize: "3rem" }} />
             </a>
             <a
               href="https://github.com/MohdFahad1"
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub className="icons" style={{fontSize:"3rem"}}/>
+              <FaGithub className="icons" style={{ fontSize: "3rem" }} />
             </a>
           </div>
           <a

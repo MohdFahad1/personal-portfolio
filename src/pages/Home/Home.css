@@ -16,14 +16,14 @@
       #1ddde8,
       #2b1de8,
       #dd00f3,
-      #dd00f3
+      #F97C82
     );
     background-size: 1800% 1800%;
   
-    -webkit-animation: rainbow 40s ease infinite;
-    -z-animation: rainbow 40s ease infinite;
-    -o-animation: rainbow 40s ease infinite;
-    animation: rainbow 40s ease infinite;
+    -webkit-animation: rainbow 50s ease infinite;
+    -z-animation: rainbow 50s ease infinite;
+    -o-animation: rainbow 50s ease infinite;
+    animation: rainbow 50s ease infinite;
   }
   
   @-webkit-keyframes rainbow {
@@ -71,6 +71,65 @@
     }
   }
   
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .lead {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  
+  .heading h1 {
+    font-size: 5em;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .iconList {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .icons {
+    color: #fff;
+    font-size: 2rem;
+    margin: 5px;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+  .iconList .icons:hover {
+    transition: 0.5s;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .more {
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .more:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    transition: 0.6s;
+  }
+  
+
+
   #stars {
     content: "e";
     background: transparent;
@@ -438,8 +497,8 @@
   }
   
   #stars2 {
-    width: 2px;
-    height: 2px;
+    width: 1.5px;
+    height: 1.5px;
     background: transparent;
     box-shadow: 1907px 1575px #fff, 893px 268px #fff, 1819px 666px #fff,
       366px 1985px #fff, 1736px 1062px #fff, 1124px 45px #fff, 905px 1674px #fff,
@@ -492,14 +551,14 @@
       355px 1024px #fff, 1894px 218px #fff, 1703px 1772px #fff, 781px 1394px #fff,
       367px 42px #fff, 100px 690px #fff, 1831px 458px #fff, 1884px 1878px #fff,
       814px 1013px #fff;
-    animation: animStar 100s linear infinite;
+    animation: animStar 80s linear infinite;
   }
   #stars2:after {
     content: " ";
     position: absolute;
     top: 2000px;
-    width: 2px;
-    height: 2px;
+    width: 1px;
+    height: 1px;
     background: transparent;
     box-shadow: 1907px 1575px #fff, 893px 268px #fff, 1819px 666px #fff,
       366px 1985px #fff, 1736px 1062px #fff, 1124px 45px #fff, 905px 1674px #fff,
@@ -555,8 +614,8 @@
   }
   
   #stars3 {
-    width: 3px;
-    height: 3px;
+    width: 2px;
+    height: 2px;
     background: transparent;
     box-shadow: 1994px 1692px #fff, 961px 1928px #fff, 819px 1320px #fff,
       1899px 52px #fff, 28px 1937px #fff, 157px 88px #fff, 860px 1909px #fff,
@@ -584,7 +643,7 @@
       1948px 303px #fff, 1889px 252px #fff, 1114px 1400px #fff, 759px 646px #fff,
       222px 571px #fff, 1908px 1401px #fff, 1856px 1204px #fff, 338px 1645px #fff,
       1528px 1050px #fff;
-    animation: animStar 150s linear infinite;
+    animation: animStar 50s linear infinite;
   }
   #stars3:after {
     content: "e ";
@@ -627,73 +686,3 @@
       transform: translateY(-2000px);
     }
   }
-  
-  .container1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .lead {
-    margin-top: 50px;
-    font-size: 20px;
-  }
-  
-  .heading h1 {
-    font-size: 5em;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  .iconList {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-  }
-  
-  .icons {
-    color: #fff;
-    font-size: 2rem;
-    margin: 5px;
-    transition: 0.6s;
-    cursor: pointer;
-  }
-  .iconList .icons:hover {
-    transition: 0.5s;
-    color: black;
-    cursor: pointer;
-  }
-  
-  .more {
-    font-weight: 500;
-    text-decoration: none;
-    border: none;
-    margin-top: 10px;
-    padding: 10px;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    color: #fff;
-  }
-  
-  .more:hover {
-    cursor: pointer;
-    color: #000;
-    background-color: #fff;
-    transition: 0.6s;
-  }
-  
-  @media screen and (max-width: 760px) {
-    .heading h1 {
-      font-size: 2.3em;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-  
-    .typingEffect {
-      font-size: 2em;
-    }
-  }
-  
