@@ -3,38 +3,43 @@ import CSS from '../../Assets/css-3.svg'
 import Javascript from '../../Assets/javascript-1.svg'
 import ReactLogo from '../../Assets/react-2.svg'
 import Tailwind from '../../Assets/tailwind-css-2.svg'
+import Next from '../../Assets/next-js.svg';
 
-const mySkills = [
+export const data = [
     {
         id:1,
         skillName:"HTML",
         level:"Advance",
-        skillLogo:{HTML}
+        skillLogo:HTML
     },
     {
         id:2,
         skillName:"CSS",
         level:"Intermediate",
-        skillLogo:{CSS}
+        skillLogo:CSS
     },
     {
         id:3,
         skillName:"Javascript",
         level:"Intermediate",
-        skillLogo:{Javascript}
+        skillLogo:Javascript
     },
     {
         id:4,
         skillName:"Tailwind CSS",
         level:"Beginner",
-        skillLogo:{Tailwind}
+        skillLogo:Tailwind
     },
     {
         id:5,
         skillName:"React Js",
         level:"Intermediate",
-        skillLogo:{ReactLogo}
+        skillLogo:ReactLogo
     },
-]
-
-export default mySkills;
+    {
+        id:6,
+        skillName:"Next Js",
+        level:"Beginner",
+        skillLogo:Next
+    }
+];
