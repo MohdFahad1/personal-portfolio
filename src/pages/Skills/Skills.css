@@ -4,8 +4,14 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 3rem;
+}
 
-    /* text-align: center; */
+.skills-para{
+    width: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 2rem 10rem 2rem 10rem;
+    text-align: center;
 }
 
 .skills-title{
@@ -16,15 +22,6 @@
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 2.5rem;
-}
-
-
-.skills-para{
-    width: 50%;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 2rem 10rem 2rem 10rem;
-    text-align: center;
 }
 
 .skills-info, .skills-data, .skills-blob{
@@ -85,4 +82,30 @@
 
 .skills-subtitle{
     color: #878686;
+}
+
+@media screen and (max-width:600px) {
+    #skills{
+        padding: 0 .8rem;
+        padding-bottom: 3rem;
+    }
+    .skills-para{
+        width:100%;
+        padding: 0 .8rem;
+        font-size: 25px;
+    }
+    .skills-blob{
+        width: 70px;
+        height: 90px;
+    }
+    .skills-blob img{
+        height: 40px;
+        width: 40px;
+    }
+    .skills-name{
+        font-size: 17px;
+    }
+    .skills-subtitle{
+        font-size: 15px;
+    }
 }
