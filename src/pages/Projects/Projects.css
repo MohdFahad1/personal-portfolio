@@ -62,3 +62,44 @@
     color: #ffffff;
     background-color: #000;
 }
+
+@media screen and (max-width:900px)
+{
+    #projects{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 1.5rem;
+    }
+    .main-card{
+        width: 350px;
+        height: 350px;
+    }
+    .card-info h1{
+        font-size: 1.8rem;
+    }
+    .link-icon{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    #projects{
+        grid-template-columns: 1fr;
+        padding-left: .5rem;
+    }
+    .main-card{
+        width: 300px;
+        height: 300px;
+    }
+    .card-info img{
+        height: 80px;
+        width: 80px;
+    }
+    .card-info h1{
+        font-size: 1.3rem;
+    }
+    .card-tech{
+        font-size: 1rem;
+        margin: 1.5rem;
+    }
+}
