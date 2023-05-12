@@ -90,6 +90,9 @@
     #about{
         padding-top: 0;
     }
+    .row{
+        gap: 0;
+    }
     .image img{
         display: none;
     }
