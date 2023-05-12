@@ -14,16 +14,17 @@
       #e3e81d,
       #1de840,
       #1ddde8,
+      #dd00f3,
       #2b1de8,
       #dd00f3,
       #F97C82
     );
     background-size: 1800% 1800%;
   
-    -webkit-animation: rainbow 50s ease infinite;
-    -z-animation: rainbow 50s ease infinite;
-    -o-animation: rainbow 50s ease infinite;
-    animation: rainbow 50s ease infinite;
+    -webkit-animation: rainbow 30s ease infinite;
+    -z-animation: rainbow 30s ease infinite;
+    -o-animation: rainbow 30s ease infinite;
+    animation: rainbow 30s ease infinite;
   }
   
   @-webkit-keyframes rainbow {
