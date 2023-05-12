@@ -21,10 +21,10 @@
     );
     background-size: 1800% 1800%;
   
-    -webkit-animation: rainbow 30s ease infinite;
-    -z-animation: rainbow 30s ease infinite;
-    -o-animation: rainbow 30s ease infinite;
-    animation: rainbow 30s ease infinite;
+    -webkit-animation: rainbow 35s ease infinite;
+    -z-animation: rainbow 35s ease infinite;
+    -o-animation: rainbow 35s ease infinite;
+    animation: rainbow 35s ease infinite;
   }
   
   @-webkit-keyframes rainbow {
