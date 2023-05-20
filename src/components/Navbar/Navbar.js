@@ -1,8 +1,10 @@
 import "./Navbar.css";
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
+
 export default function Navbar() {
   const [colorChange, setColorchange] = useState(false);
+
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorchange(true);
@@ -11,44 +13,52 @@ export default function Navbar() {
     }
   };
 
-  window.addEventListener("scroll", changeNavbarColor);
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbarColor);
+    return () => {
+      window.removeEventListener("scroll", changeNavbarColor);
+    };
+  }, []);
 
   return (
-    <div className={colorChange ? "navbar colorChange" : "navbar navbar"}>
-    <a className="brand" href="#home">
-        Fahad{" "}
-      </a>
+    <div className={colorChange ? "navbar colorChange" : "navbar"}>
+      <ScrollLink className="brand" to="home" smooth={true} duration={500}>
+        Fahad
+      </ScrollLink>
       <div className="nav-links">
-        <a
-          activeclass="active"
+        <ScrollLink
+          activeClass="active"
+          to="about"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
-          href="#about"
+          className="navbar-link"
         >
           About
-        </a>
-        <a
-          activeclass="active"
+        </ScrollLink>
+        <ScrollLink
+          activeClass="active"
+          to="projects"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
-          href="#projects"
+          className="navbar-link"
         >
           Projects
-        </a>
-        <a
-          activeclass="active"
+        </ScrollLink>
+        <ScrollLink
+          activeClass="active"
+          to="skills"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
-          href="#skills"
+          className="navbar-link"
         >
           Skills
-        </a>
+        </ScrollLink>
       </div>
     </div>
   );

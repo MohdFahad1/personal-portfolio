@@ -26,6 +26,7 @@
     padding: 10px 10px 10px 10px;
     font-size: 25px;
     transition: 0.3s;
+    cursor: pointer;
   }
   .brand:hover {
     opacity: 1;
@@ -35,7 +36,7 @@
     display: flex;
   }
   
-  .navbar .nav-links a {
+  .navbar-link{
     text-decoration: none;
     color: #000;
     opacity: 0.6;
@@ -44,9 +45,10 @@
     padding: 10px 10px 10px 10px;
     font-size: 20px;
     transition: 0.3s;
+    cursor: pointer;
   }
   
-  .navbar .nav-links a:hover {
+  .navbar-link:hover {
     opacity: 1;
     color: #000;
   }

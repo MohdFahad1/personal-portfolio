@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Typewriter from 'typewriter-effect';
+import { Link as ScrollLink } from "react-scroll";
 import "./Home.css";
 
 
@@ -46,17 +47,17 @@ const Home = () => {
               <FaGithub className="icons" style={{ fontSize: "3rem" }} />
             </a>
           </div>
-          <a
-            activeclass="active"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            href="#about"
-            className="more"
-          >
-            More About Me
-          </a>
+          <ScrollLink
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="more"
+        >
+          More About Me
+        </ScrollLink>
         </div>
       </div>
     </>
