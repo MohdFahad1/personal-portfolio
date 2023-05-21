@@ -20,7 +20,6 @@ const Home = () => {
             </h1>
           </div>
           <div className="lead">
-            <p>
               <Typewriter
             options={{
               strings: ['A keen and curious learner.'],
@@ -29,7 +28,6 @@ const Home = () => {
               pauseFor: 999999999999999,
             }}
           />
-            </p>
           </div>
           <div className="iconList">
             <a

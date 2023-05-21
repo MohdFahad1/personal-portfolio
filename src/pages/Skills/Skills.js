@@ -20,9 +20,9 @@ const Skills = () => {
               <div className='skills-info'>
                 {data.map(({id, skillName, level, skillLogo}) => {
                   return (
-                    <div className='skills-data'>
+                    <div className='skills-data' key={id}>
                       <div className='skills-blob'>
-                        <img src={skillLogo} alt={skillName} key={id} />
+                        <img src={skillLogo} alt={skillName} />
                       </div>
                       <h3 className='skills-name'>{skillName}</h3>
                       <span className='skills-subtitle'>{level}</span>

@@ -12,10 +12,10 @@ const Projects = () => {
       <div id='projects'>
         {data.map(({ id, title, github, demo, logo, tech1, tech2, tech3, tech4, }) => {
           return (
-            <div className='main-card'>
+            <div className='main-card' key={id}>
               <div className='card-info'>
                 <h1>{title}</h1>
-                <img src={logo} alt={title} key={id} />
+                <img src={logo} alt={title} />
               </div>
               <hr style={{marginTop:"1rem"}}/>
               <div className='card-tech'><p>Tech Used : {tech1}, {tech2}, {tech3}, {tech4}</p></div>
