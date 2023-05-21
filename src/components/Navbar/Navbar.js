@@ -5,15 +5,14 @@ import { FaBars } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 
 export default function Navbar() {
-  const [colorChange, setColorChange] = useState(false);
+  const [colorChange, setColorchange] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [icon, setIcon] = useState(<FaBars className="icon-transition" />);
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
-      setColorChange(true);
+      setColorchange(true);
     } else {
-      setColorChange(false);
+      setColorchange(false);
     }
   };
 
@@ -26,7 +25,6 @@ export default function Navbar() {
 
   const toggleMobileMenu = () => {
     setIsMobile(!isMobile);
-    setIcon(isMobile ? <FaBars className="icon-transition" /> : <CgClose className="icon-transition" />);
   };
 
   return (
@@ -34,7 +32,7 @@ export default function Navbar() {
       <ScrollLink className="brand" to="home" smooth={true} duration={500}>
         {'<Fahad />'}
       </ScrollLink>
-      <div className={isMobile ? "nav-links-mobile active" : "nav-links"}>
+      <div className={isMobile ? "nav-links-mobile active" : "nav-links nav-links-mobile"}>
         <ScrollLink
           activeClass="active"
           to="about"
@@ -69,8 +67,11 @@ export default function Navbar() {
           Skills
         </ScrollLink>
       </div>
-      <button className="mobile-menu-icon" onClick={toggleMobileMenu}>
-        {icon}
+      <button
+        className="mobile-menu-icon"
+        onClick={toggleMobileMenu}
+      >
+      <FaBars />
       </button>
     </div>
   );
