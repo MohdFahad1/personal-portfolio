@@ -1,24 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Projects.css';
 import { data } from './data';
 import { FiGithub } from "react-icons/fi";
 import { CgLink } from "react-icons/cg";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Projects = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  })
+
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Projects</h1>
       <div id='projects'>
-        {data.map(({ id, title, github, demo, logo, tech1, tech2, tech3, tech4, }) => {
+        {data.map(({ id, title, github, demo, logo, tech }) => {
           return (
-            <div className='main-card' key={id}>
+            <div className='main-card' key={id} data-aos="fade-up">
               <div className='card-info'>
                 <h1>{title}</h1>
                 <img src={logo} alt={title} />
               </div>
               <hr style={{marginTop:"1rem"}}/>
-              <div className='card-tech'><p>Tech Used : {tech1}, {tech2}, {tech3}, {tech4}</p></div>
+              <div className='card-tech'><p>Tech Used : {tech} </p></div>
               <hr style={{marginBottom:"1rem"}}/>
               
               <div className='card-links'>

@@ -9,21 +9,15 @@ export const data = [
     title: "Pixabay Clone",
     github: "https://github.com/MohdFahad1/pixabay-clone",
     demo: "https://react-pixabay-clone.netlify.app/",
-    tech1: "HTML",
-    tech2: "CSS",
-    tech3: "Javascript",
-    tech4: "React",
+    tech: "React JS, Javscript, CSS"
   },
   {
     id: 2,
     logo: weather,
-    title: "Weather Website",
-    github: "https://github.com/MohdFahad1/weather-app.netlify",
-    demo: "https://fahad-weather-application.netlify.app",
-    tech1: "HTML",
-    tech2: "CSS",
-    tech3: "Javascript",
-    tech4: "React",
+    title: "WeatherNow",
+    github: "https://github.com/MohdFahad1/WeatherNow",
+    demo: "https://weather-app-mohdfahad1.vercel.app/",
+    tech: "Next JS, React JS, Tailwind CSS",
   },
   {
     id: 3,
@@ -31,10 +25,7 @@ export const data = [
     title: "Random Quote",
     github: "https://github.com/MohdFahad1/random-quote.netlify",
     demo: "https://random-quote-generator-application.netlify.app",
-    tech1: "HTML",
-    tech2: "CSS",
-    tech3: "Javascript",
-    tech4: "React",
+    tech: "React JS, Javascript, CSS"
   },
   {
     id: 4,
@@ -42,9 +33,6 @@ export const data = [
     title: "MarkDown Editor",
     github: "https://github.com/MohdFahad1/markdown-editor",
     demo: "https://vcbz22.csb.app/",
-    tech1: "HTML",
-    tech2: "CSS",
-    tech3: "Javascript",
-    tech4: "React",
+    tech: "React JS, CSS",
   }
 ];

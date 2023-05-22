@@ -12,7 +12,7 @@
     padding: 0 7% 0 7%;
 }
 
-.image img {
+#about .my-image img {
     height: 300px;
     width: 300px;
     border-radius: 15px;
@@ -20,7 +20,7 @@
     transition: all .3s;
 }
 
-.image img:hover {
+#about .my-image img:hover {
     cursor: pointer;
     transform: translate(-0.5rem, -0.5rem);
     border-radius: 15px;
@@ -73,7 +73,7 @@
         padding: 0 1rem;
         gap: 2rem;
     }
-    .image img{
+    .my-image img{
         height:250px;
         width: 250px;
     }
@@ -93,7 +93,7 @@
     .row{
         gap: 0;
     }
-    .image img{
+    .my-image img{
         display: none;
     }
     .information{
