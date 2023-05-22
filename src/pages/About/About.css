@@ -16,15 +16,6 @@
     height: 300px;
     width: 300px;
     border-radius: 15px;
-    box-shadow: 1rem 1rem #9b9da0;
-    transition: all .3s;
-}
-
-#about .my-image img:hover {
-    cursor: pointer;
-    transform: translate(-0.5rem, -0.5rem);
-    border-radius: 15px;
-    box-shadow: 2em 2em #9b9da0;
 }
 
 .information {

@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../../Assets/DSC_8841.JPG";
+import pic from "../../Assets/my-image.png";
 import "./About.css";
 
 export default function About() {
@@ -8,9 +8,9 @@ export default function About() {
       <div id="about">
         <div className="row">
           <div className="my-image">
-            <img src={pic} alt="Happy Coding" data-aos="fade-right" data-aos-duration="900" className="my-image"/>
+            <img src={pic} alt="Happy Coding" className="my-image"/>
           </div>
-          <div className="information"data-aos="fade-left" data-aos-duration="400">
+          <div className="information"data-aos="fade-left" data-aos-duration="1000">
             <h1>About Me</h1>
             <p>
               Hey, I'm Mohd Fahad. Currently in the pre final year of my
