@@ -1,4 +1,5 @@
 .navbar {
+  width: 100%;
   display: flex;
   position: fixed;
   right: 0;
@@ -77,6 +78,9 @@
 
 
 @media only screen and (max-width: 760px) {
+  .navbar{
+    width: 100%;
+  }
 
   .nav-links-mobile {
     position: absolute;

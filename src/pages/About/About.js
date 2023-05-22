@@ -10,7 +10,7 @@ export default function About() {
           <div className="my-image">
             <img src={pic} alt="Happy Coding" className="my-image"/>
           </div>
-          <div className="information"data-aos="fade-left" data-aos-duration="1000">
+          <div className="information"data-aos="fade-up" data-aos-duration="1000">
             <h1>About Me</h1>
             <p>
               Hey, I'm Mohd Fahad. Currently in the pre final year of my
