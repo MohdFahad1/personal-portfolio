@@ -37,7 +37,7 @@
     line-height: 1.3;
 }
 
-.information a {
+#about .information a {
     text-decoration: none;
     border: none;
     border: 1px solid #343a40;
@@ -48,12 +48,12 @@
     padding: 5px;
     border-radius: 4px;
     cursor: pointer;
-    transition: 0.5s;
 }
 
-.information a:hover {
+#about .information a:hover {
     background-color: #343a40;
     color: #fff;
+    transition: 0.5s;
 }
 
 @media screen and (max-width:900px) {
