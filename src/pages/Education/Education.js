@@ -28,7 +28,7 @@ export default function Experience() {
               <h4 className="vertical-timeline-element-subtitle">
                 Bachleor Degree
               </h4>
-              <p>JAMIA HUMDARD UNIVERSITY</p>
+              <p>JAMIA HAMDARD UNIVERSITY</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--educaton"

@@ -4,6 +4,8 @@ import Javascript from '../../Assets/javascript-1.svg'
 import ReactLogo from '../../Assets/react-2.svg'
 import Tailwind from '../../Assets/tailwind-css-2.svg'
 import Next from '../../Assets/next-js.svg';
+import redux from '../../Assets/redux.png';
+import firebase from '../../Assets/firebase.png';
 
 export const data = [
     {
@@ -27,7 +29,7 @@ export const data = [
     {
         id:4,
         skillName:"Tailwind CSS",
-        level:"Beginner",
+        level:"Advance",
         skillLogo:Tailwind
     },
     {
@@ -39,7 +41,20 @@ export const data = [
     {
         id:6,
         skillName:"Next Js",
-        level:"Beginner",
+        level:"Intermediate",
         skillLogo:Next
-    }
+    },
+    {
+        id:7,
+        skillName:"Redux",
+        level:"Beginner",
+        skillLogo:redux
+    },
+    {
+        id:8,
+        skillName:"Firebase",
+        level:"Beginner",
+        skillLogo:firebase
+    },
+    
 ];
